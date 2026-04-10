@@ -1,5 +1,5 @@
 class Number {
-    public int factorial(int n) {
+    static public long factorial(int n) {
         if (n == 0) {
             return 1;
         } else {
@@ -8,16 +8,15 @@ class Number {
     }
 }
 public class RecursiveFactorial {
+    private static int value = 5;
     public static void main(String[] args) {
-        Number num = new Number();
-        int value = 5;
-        System.out.println("The factorial of " + value + " is: " + num.factorial(value));
+        System.out.println("The factorial of " + value + " is: " + Number.factorial(value));
     }
 }
 
 /*
 public class RecursiveFactorial {
-    public static int factorial(int n) {
+    public static long factorial(int n) {
         if (n == 0) {
             return 1;
         } else {

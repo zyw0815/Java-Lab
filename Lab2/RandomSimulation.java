@@ -1,5 +1,6 @@
 public class RandomSimulation {
     public static void main(String[] args) {
+        // 局部变量不用private修饰符
         int totalTimes = 1000;
         int count = 0;
         for (int i = 0; i < totalTimes; i++) {
