@@ -1,7 +1,7 @@
 public class Budget {
     private int budget;
-    private int[] keyboard = new int[3];
-    private int[] usb = new int[3];
+    private int[] keyboard;
+    private int[] usb;
 
     public Budget(int budget, int[] keyboard, int[] usb) {
         this.budget = budget;
@@ -12,10 +12,10 @@ public class Budget {
     public int getCost() {
         int Cost = -1;
         int maxCost = -1;
-        for (int i = 0; i < this.keyboard.length; i++) {
-            for (int j = 0; j < this.usb.length; j++) {
-                Cost = this.keyboard[i] + this.usb[j];
-                if (Cost > maxCost && Cost <= this.budget) {
+        for (int i = 0; i < keyboard.length; i++) {
+            for (int j = 0; j < usb.length; j++) {
+                Cost = keyboard[i] + usb[j];
+                if (Cost > maxCost && Cost <= budget) {
                     maxCost = Cost;
                 }
             }

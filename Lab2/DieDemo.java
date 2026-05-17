@@ -15,7 +15,7 @@ public class DieDemo {
         Die die1 = new Die();
         Die die2 = new Die();
 
-        int sum[] = new int[11];
+        int[] sum = new int[11];
         int totalRolls = 1000;
         for (int i = 0; i < totalRolls; i++) {
             die1.roll();
