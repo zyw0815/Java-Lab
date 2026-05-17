@@ -23,13 +23,18 @@ class testPalindrome {
 public class Palindrome {
     public static void main(String[] args) {
         String str = new String();
+        Scanner sc = null;
 
-        try(Scanner sc = new Scanner(System.in)) {
+        try {
+            sc = new Scanner(System.in);
             System.out.print("Input: ");
             str = sc.nextLine();
         }
-        catch (Exception e){
+        catch (Exception e) {
             System.err.println(e);
+        }
+        finally {
+            sc.close();
         }
 
         System.out.print("Output: ");

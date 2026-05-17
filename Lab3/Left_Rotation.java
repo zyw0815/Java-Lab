@@ -4,9 +4,10 @@ public class Left_Rotation {
     public static void main(String[] args) {
         String[] arr = new String[4];
         int d = 0;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = null;
 
         try {
+            sc = new Scanner(System.in);
             System.out.println("Input:");
             d = sc.nextInt();
             // Delete the space before first string

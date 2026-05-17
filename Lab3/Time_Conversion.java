@@ -28,13 +28,18 @@ public class Time_Conversion {
     public static void main(String[] args) {
         String str = new String();
         String part1,part2 = new String();
+        Scanner sc = null;
 
-        System.out.println("Input:");
-        try (Scanner sc = new Scanner(System.in)) {
+        try {
+            System.out.println("Input:");
+            sc = new Scanner(System.in);
             str = sc.nextLine();
         }
         catch(Exception e) {
             System.err.println(e);
+        }
+        finally {
+            sc.close();
         }
 
         part1 = str.substring(0, 8);
