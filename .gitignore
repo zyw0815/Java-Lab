@@ -13,3 +13,13 @@ out/
 
 # 忽略 Mac 系统生成的临时文件
 .DS_Store
+
+# 忽略 CLAUDE.md
+CLAUDE.md
+
+# 忽略所有 input 文件
+**/input.txt
+**/input.*
+
+# 忽略 gitignore 本身
+.gitignore
